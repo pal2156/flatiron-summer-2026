@@ -9,7 +9,7 @@ import graphene.lattice.Vector2;
  *
  * <p>Physics reasoning: stack a second graphene layer on top of the first,
  * shifted so that one sublattice of the top layer (A2) sits directly above
- * one sublattice of the bottom layer (A1) — this is the "Bernal" or "AB"
+ * one sublattice of the bottom layer (A1); this is the "Bernal" or "AB"
  * stacking realized in natural graphite. The other two sublattices, B1
  * (bottom) and B2 (top), sit above/below the empty centers of the other
  * layer's hexagons, with no atom directly across from them. This geometric
@@ -34,7 +34,7 @@ import graphene.lattice.Vector2;
  *
  * <p>Two weaker interlayer hoppings, g3 (B1-B2, responsible for "trigonal
  * warping" of the low-energy bands) and g4 (A1-B2 and A2-B1), are left out
- * entirely — not set to zero as an approximation, but genuinely absent from
+ * entirely: not set to zero as an approximation, but genuinely absent from
  * this model, so that every term present can be tied to one clearly
  * identified physical process (Castro Neto et al., Rev. Mod. Phys. 81, 109
  * (2009), Sec. II.C).
@@ -45,7 +45,7 @@ import graphene.lattice.Vector2;
  * textbook result: two bands touching exactly at K (from B1/B2) and two
  * bands split off by +/- g1 (from A1/A2, the dimer states). Away from k = K,
  * virtual hopping through the gapped dimer states mixes back into the B1/B2
- * subspace and gives it a small, quadratic-in-k dispersion — the touching
+ * subspace and gives it a small, quadratic-in-k dispersion: the touching
  * bands are quadratic ("massive"), unlike the linear Dirac cone of a single
  * layer, which is exactly the qualitative difference the constructor-level
  * Javadoc above and the generated figures are meant to illustrate.
@@ -67,7 +67,7 @@ public final class BilayerHamiltonian {
     /**
      * @param gamma0Ev intralayer nearest-neighbor hopping (same role as t in the monolayer model), eV
      * @param gamma1Ev interlayer dimer (A1-A2) hopping, eV
-     * @param interlayerBiasVEv half the applied interlayer potential difference, eV — layer 1 sits at
+     * @param interlayerBiasVEv half the applied interlayer potential difference, eV; layer 1 sits at
      *     -interlayerBiasV, layer 2 at +interlayerBiasV
      */
     public BilayerHamiltonian(double gamma0Ev, double gamma1Ev, double interlayerBiasVEv) {

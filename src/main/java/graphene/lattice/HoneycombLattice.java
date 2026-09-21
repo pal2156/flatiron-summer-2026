@@ -7,7 +7,7 @@ package graphene.lattice;
  * a Bravais lattice: there is no single set of lattice vectors that reaches every
  * atom from a given atom. Instead, the honeycomb is two interpenetrating triangular
  * Bravais sublattices, conventionally labeled A and B. Every A atom has three nearest
- * neighbors, all of which are B atoms, and vice versa — this A/B bipartite structure
+ * neighbors, all of which are B atoms, and vice versa; this A/B bipartite structure
  * is what ultimately produces the two-band (2x2 Hamiltonian) physics of monolayer
  * graphene and the two independent Dirac cones at the K and K' points.
  *
@@ -85,7 +85,7 @@ public final class HoneycombLattice {
     /**
      * The K Dirac point, a corner of the hexagonal Brillouin zone. This is where the
      * valence (pi) and conduction (pi*) bands touch with zero gap and linear
-     * (Dirac-cone) dispersion — see {@link graphene.dirac.DiracCone}. Its analytic
+     * (Dirac-cone) dispersion; see {@link graphene.dirac.DiracCone}. Its analytic
      * position, K = (2*pi/3a, 2*pi/(3*sqrt(3)*a)), follows directly from requiring
      * that the nearest-neighbor structure factor R(k) (see MonolayerHamiltonian)
      * vanish.

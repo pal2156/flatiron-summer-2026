@@ -29,7 +29,7 @@ import graphene.lattice.Vector2;
  * E_pm(k) = e0(k) +/- t|f(k)|: the filled "pi" (bonding, valence) band and
  * the empty "pi*" (antibonding, conduction) band. They touch with zero gap
  * exactly where f(k) = 0, which happens only at the two inequivalent
- * Brillouin-zone corners K and K' — the Dirac points.
+ * Brillouin-zone corners K and K': the Dirac points.
  *
  * <p>Optionally, hopping to the six next-nearest neighbors (same sublattice,
  * amplitude -t') is included. Because next-nearest-neighbor hopping never

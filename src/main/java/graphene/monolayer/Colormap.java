@@ -9,8 +9,8 @@ import java.awt.Color;
  * <p>This is deliberately not physics, just visualization plumbing: graphene's
  * two pi bands are symmetric about zero energy (for the pure nearest-neighbor
  * model), so a colormap that passes through white at the midpoint of the
- * plotted range makes the zero-energy contour — which runs straight through
- * the Dirac points — visually pop out on its own, before any point markers are
+ * plotted range makes the zero-energy contour, which runs straight through
+ * the Dirac points, visually pop out on its own, before any point markers are
  * even drawn.
  *
  * <p>Control points follow the ColorBrewer "RdBu" diverging palette, a standard

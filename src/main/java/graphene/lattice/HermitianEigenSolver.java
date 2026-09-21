@@ -23,7 +23,7 @@ import org.ejml.interfaces.decomposition.EigenDecomposition_F64;
  * eigenvectors of M with the same real eigenvalue E. Since H is Hermitian its
  * eigenvalues E are guaranteed real, so this "complexification" trick lets us
  * diagonalize H exactly using EJML's real symmetric eigenvalue routine, which
- * is numerically robust and — because it specializes on symmetric input —
+ * is numerically robust and, because it specializes on symmetric input,
  * always returns real eigenvalues rather than the general complex-conjugate
  * pairs a non-symmetric solver would report.
  */

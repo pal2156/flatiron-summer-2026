@@ -21,7 +21,7 @@ import org.knowm.xchart.style.markers.SeriesMarkers;
 /**
  * Regenerates the three bilayer graphene figures described in the README:
  * (a) unbiased bands near K, (b) biased bands near K showing the induced
- * gap, and (c) the gap-vs-bias curve — the centerpiece figure demonstrating
+ * gap, and (c) the gap-vs-bias curve: the centerpiece figure demonstrating
  * that, unlike single-layer graphene, Bernal bilayer graphene has a band gap
  * that can be tuned continuously with an applied field.
  */
@@ -105,7 +105,7 @@ public final class BilayerBandStructure {
     }
 
     // ------------------------------------------------------------------
-    // (c) Band gap versus interlayer bias — the centerpiece figure.
+    // (c) Band gap versus interlayer bias: the centerpiece figure.
     // ------------------------------------------------------------------
 
     private static void plotGapVsBias(Path outputPath) throws IOException {

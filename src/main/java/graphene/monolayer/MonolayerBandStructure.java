@@ -58,7 +58,7 @@ public final class MonolayerBandStructure {
     }
 
     // ------------------------------------------------------------------
-    // (a) Full band structure over the 2D Brillouin zone — the centerpiece figure.
+    // (a) Full band structure over the 2D Brillouin zone: the centerpiece figure.
     // ------------------------------------------------------------------
 
     private static void plotBrillouinZoneBandStructure(MonolayerHamiltonian model, Path outputPath) throws IOException {
@@ -97,7 +97,7 @@ public final class MonolayerBandStructure {
         g.setFont(new Font("SansSerif", Font.PLAIN, 14));
         centerText(
                 g,
-                "Nearest-neighbor tight binding, t = " + model.hoppingT() + " eV  —  Dirac points K, K' marked",
+                "Nearest-neighbor tight binding, t = " + model.hoppingT() + " eV, Dirac points K, K' marked",
                 width / 2,
                 64);
 
