@@ -10,7 +10,7 @@ import graphene.monolayer.MonolayerHamiltonian;
  * <p>Physics reasoning: expanding the nearest-neighbor structure factor f(k)
  * (see {@link MonolayerHamiltonian}) to first order in q = k - K around a
  * Dirac point K shows that |f(K+q)| grows linearly in |q|, with a slope set
- * purely by the lattice geometry and the hopping energy t — there is no k^2
+ * purely by the lattice geometry and the hopping energy t: there is no k^2
  * term, because the three nearest-neighbor phases exp(i k . delta_i)
  * interfere destructively at K in just the right way to cancel it. Keeping
  * only this linear term turns the tight-binding Hamiltonian into a
@@ -28,8 +28,8 @@ import graphene.monolayer.MonolayerHamiltonian;
  *
  * <p>Because it is only the leading term of a Taylor expansion, the linear
  * formula is accurate close to K and increasingly wrong further away, where
- * the hexagonal symmetry of the lattice — not the circular symmetry implied
- * by |q| — reasserts itself as "trigonal warping" of the equal-energy
+ * the hexagonal symmetry of the lattice, not the circular symmetry implied
+ * by |q|, reasserts itself as "trigonal warping" of the equal-energy
  * contours (visible in {@code figures/monolayer_dirac_cone_zoom.png}).
  */
 public final class DiracCone {
@@ -60,7 +60,7 @@ public final class DiracCone {
     /**
      * The textbook analytic Fermi velocity, vF = 3*t*a/(2*hbar), obtained by
      * Taylor-expanding f(k) to linear order around K by hand (see class
-     * Javadoc). Independent of any numerics — this is a closed-form formula
+     * Javadoc). Independent of any numerics: this is a closed-form formula
      * in terms of the two inputs to the tight-binding model, t and a.
      */
     public double analyticFermiVelocity() {

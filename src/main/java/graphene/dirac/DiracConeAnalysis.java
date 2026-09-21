@@ -76,7 +76,7 @@ public final class DiracConeAnalysis {
         }
 
         // The isotropic linear cone E = slope*|q| is exactly two straight rays meeting
-        // at the origin, so 3 points fully describe it — using the same dense sampling
+        // at the origin, so 3 points fully describe it: using the same dense sampling
         // as the curved tight-binding bands would make the dashed stroke below restart
         // (and so look solid) at every tiny polyline segment.
         double edgeEnergy = cone.linearApproximation(qMax);

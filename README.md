@@ -6,9 +6,9 @@ structure and its Dirac cones, and the tunable band gap of Bernal-stacked
 bilayer graphene.
 
 The project is intentionally narrow in scope. It covers exactly three
-pieces of physics — nearest-neighbor tight binding on a honeycomb lattice,
+pieces of physics: nearest-neighbor tight binding on a honeycomb lattice,
 the linear (Dirac) approximation near the band-touching points, and the
-minimal two-parameter Bernal bilayer Hamiltonian — each implemented and
+minimal two-parameter Bernal bilayer Hamiltonian, each implemented and
 documented well enough to be defended line by line. It does not attempt
 transport/scattering calculations, nanoribbons, disorder, or magnetic-field
 physics.
@@ -31,8 +31,8 @@ grows with an applied interlayer electric field:
 ### The honeycomb lattice
 
 Graphene is a single layer of carbon atoms arranged in a honeycomb pattern.
-A honeycomb is *not* a Bravais lattice — no single set of translations
-reaches every atom from one starting atom — so it is described as two
+A honeycomb is *not* a Bravais lattice, since no single set of translations
+reaches every atom from one starting atom, so it is described as two
 interpenetrating triangular sublattices, A and B, with one atom of each per
 unit cell. The lattice vectors are
 
@@ -72,7 +72,7 @@ $\pi$ bands,
 
 $$E_{\pm}(\mathbf{k}) = \varepsilon_0(\mathbf{k}) \pm t\,\lvert f(\mathbf{k}) \rvert,$$
 
-which touch with zero gap exactly where $f(\mathbf{k}) = 0$ — which happens
+which touch with zero gap exactly where $f(\mathbf{k}) = 0$, which happens
 only at $\mathbf{K}$ and $\mathbf{K}'$. Expanding $f(\mathbf{K}+\mathbf{q})$
 to first order in $\mathbf{q}$ shows that near a Dirac point, the dispersion
 becomes **linear** rather than the usual parabolic $\hbar^2 k^2/2m$:
@@ -109,15 +109,15 @@ At $V=0$, diagonalizing this at $\mathbf{k}=\mathbf{K}$ gives two bands that
 touch exactly at zero energy (from the B1/B2 subspace) and two bands split
 off by $\pm\gamma_1$ (from the A1/A2 dimer subspace). Away from $\mathbf K$,
 virtual hopping through the gapped dimer states gives the touching bands a
-small **quadratic** dispersion, unlike monolayer graphene's linear cone —
+small **quadratic** dispersion, unlike monolayer graphene's linear cone;
 bilayer low-energy carriers behave as massive, rather than massless, Dirac
 fermions. Turning on $V$ splits the touching bands directly at $\mathbf K$
-by $2V$, and — as the biased-bands figure below makes visible — the true
+by $2V$, and, as the biased-bands figure below makes visible, the true
 minimum gap actually occurs at a small but nonzero $\lvert\mathbf{k}-\mathbf
 K\rvert$, not exactly at $\mathbf K$, a subtlety sometimes called the
 "Mexican-hat" band structure. Because this gap is set by an *external* field
 rather than by the fixed lattice geometry, it can be tuned continuously from
-zero — something monolayer graphene's Dirac cone can never do.
+zero, something monolayer graphene's Dirac cone can never do.
 
 ## Figure gallery
 
@@ -174,7 +174,7 @@ checked against the closed-form $v_F = 3ta/(2\hbar)$ directly.
 - **Diagonalization**: [EJML](http://ejml.org/) (`org.ejml`) doesn't ship a
   native complex-matrix eigensolver, so each complex Hermitian Bloch
   Hamiltonian is diagonalized by embedding it as a real symmetric matrix
-  twice its size (a standard trick — see the Javadoc on
+  twice its size (a standard trick; see the Javadoc on
   `graphene.lattice.HermitianEigenSolver`) and diagonalizing that instead.
 - **Plotting**: 2D line/band plots use [XChart](https://knowm.org/open-source/xchart/).
   The centerpiece Brillouin-zone and Dirac-cone heatmaps are rendered
